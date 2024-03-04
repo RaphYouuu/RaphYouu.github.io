@@ -1,0 +1,354 @@
+* {
+    scrollbar-width:none ;
+    scrollbar-color: #003580 #FFFFFF;
+ }
+html{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+body{
+    background-color: #0B0B0B;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.redirection {
+    opacity: 0%;
+    background-color: #fff;
+}
+@font-face {
+    font-family: Autunm Flowers;
+    src: url(../font/AutumnFlowers-9YVZK.otf) format('opentype');
+}
+@font-face {
+    font-family: Druk Medium;
+    src: url(../font/Druk-MediumItalic-Trial.otf) format('opentype');
+}
+@font-face {
+    font-family: Fontastique;
+    src: url(../font/fontastique.ttf) format('opentype');
+}
+@font-face {
+    font-family: Montreal neue;
+    src: url(../font/NeueMontreal-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: Montreal book;
+    src: url(../font/Montreal-Medium\ Regular\ copie.ttf) format('opentype');
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 115px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    align-items: center;
+    z-index: 10;
+}
+main{
+    display: grid;
+    top: 85px;
+    height: 550px;
+    width: 100%;
+    position: relative;
+}
+.gray_bar {
+    align-self: flex-end;
+    background-color: rgb(229, 229, 229);
+    width: 100%;
+    height: 1px;
+}
+.menu {
+    height: 100%;
+    width: 20%;
+    display: grid;
+    position: absolute;
+    right: 0;
+    top: 0;
+    justify-content: space-around;
+}
+.menu1 {
+    height: 100%;
+    width: 20%;
+    justify-self: flex-end;
+    display: grid;
+    right: 6%;
+    position: relative;
+}
+.menu3 {
+    height: 100%;
+    width: 20%;
+    justify-self: flex-end;
+    display: grid;
+    right: 6%;
+    position: relative;
+}
+.menu2 {
+    height: 100%;
+    width: 20%;
+    display: grid;
+    right: 18%;
+    position: absolute;
+    z-index: 1;
+}
+.menu4 {
+    height: 100%;
+    width: 20%;
+    display: grid;
+    right: 18%;
+    position: absolute;
+}
+.name {
+    font-weight:200;
+    font-size: 46px;
+    cursor: pointer;
+    font-family: sans-serif;
+    justify-self: flex-start;
+    align-self:flex-end;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+    font-family: 'Druk Medium';
+    transform-origin: top;
+    transition: all 0.6s;
+    transform-style: preserve-3d;
+    perspective-origin: 2000px;
+}
+.name::selection {
+    color: rgb(59, 35, 35);
+    background-color: rgb(208, 175, 175);
+}
+.contact {
+    font-size: 20px;
+    cursor: pointer;
+}
+.contact_bar {
+    bottom: 30px;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+}
+.about_bar {
+    bottom: 30px;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+}
+.french_bar {
+    bottom: 30px;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+}
+.bar1 {
+    width: 0%;
+    height: 100%;
+    transition: all 0.35s ease-in-out;
+    background-color: aliceblue;
+}
+.bar2 {
+    width: 0%;
+    height: 100%;
+    transition: all 0.35s ease-in-out;
+    background-color: aliceblue;
+}
+.bar3 {
+    width: 0%;
+    height: 100%;
+    transition: all 0.35s ease-in-out;
+    background-color: aliceblue;
+}
+.contact_menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+    cursor: pointer;
+    z-index: 10;
+}
+.contact_container {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    opacity: 0;
+    position: relative;
+    top: 100px;
+}
+.port {
+    font-family: 'Fontastique';
+    justify-self: center;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 90px;
+    letter-spacing: 1.5px;
+}
+.port::selection {
+    background-color: white;
+    color: #000;
+}
+.about_menu {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self:center;
+    cursor: pointer;
+}
+.french_menu {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self:flex-end;
+    right: 10%;
+    cursor: pointer;
+}
+.english_menu {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self:flex-end;
+    right: 10%;
+    cursor: pointer;
+}
+.about {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 100;
+}
+.french {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 100;
+}
+.center {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.title {
+    color: white;
+    font-family: 'Montreal neue';
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: .20rem;    
+    text-align: center;
+}
+.title::selection {
+    background-color: white;
+    color: #000;
+}
+.image {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    transition: opacity 3.5s;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+}
+.image1 {
+    width: 70%;
+    top: 3200px;
+    left: 15%;
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+    display: flex;
+}
+.image1 img {
+    width: 100%;
+}
+.text1 {
+    left: 0px;
+    top: 80px;
+    color: white;
+    position: relative;
+    font-weight: 100;
+    font-family: 'Montreal book';
+    font-size: 15px;
+    letter-spacing: 0px;
+    margin-left: 25px;
+}
+.text2 {
+    right: 0px;
+    top: 280px;
+    color: white;
+    position: absolute;
+    font-weight: 100;
+    font-family: 'Montreal book';
+    font-size: 15px;
+    letter-spacing: 0px;
+    margin-right: 25px;
+}
+.text1::selection {
+    background-color: white;
+    color: #000;
+}
+
+.text2::selection {
+    background-color: white;
+    color: #000;
+}
+.img {
+    justify-self: center;
+    width: 80%;
+    height: 60%;
+    top: -30px;
+    position: relative;
+    z-index: 1;
+}
+.img img{
+    width: 100%;
+}
+.img1 {
+    justify-self: center;
+    left: 108px;
+    width: 65%;
+    height: 60%;
+    top: 160px;
+    z-index: 1;
+    position: relative;
+}
+.img1 img {
+    width: 100%;
+}
+.img2 {
+    justify-self: flex-start;
+    width: 55%;
+    height: 50%;
+    top: 160px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-top: 10%;
+    position: relative;
+}
+.img2 img {
+    width: 100%;
+}
